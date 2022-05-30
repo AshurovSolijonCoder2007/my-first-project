@@ -1,0 +1,172 @@
+@font-face{
+	font-family: 'font-line';
+	src: url('../fonts/web.ttf');
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	transition: .4s;
+	box-sizing: border-box;
+	user-select: none;
+	text-decoration: none;
+	list-style: none;
+	font-family: font-line, system-ui;
+	justify-content: center;
+	align-items: center;
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000051; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #000; 
+  border-radius: 10px;
+  border: 2px solid darkblue;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: wheat; 
+  border-radius: 10px;
+  border: 2px solid darkblue;
+}
+
+body{
+	background-image: url(../img/M.jpg);
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+.brend {
+	color: rebeccapurple;
+}
+
+.logo {	
+	min-width: 70px;
+	min-height: 70px;
+	background-image: url(../img/g-logo-design.png);
+	background-size: 200% 150%;
+	background-position: center center;
+}
+
+.navbar {
+	padding: 10px;
+	width: 100%;
+	display: flex;
+  background-color: rgba(5, 5, 20, 0.25);  
+	justify-content: space-around;
+	align-items: center;
+}
+
+.menu {
+	display: flex;
+}
+
+.menu li:not(:last-child) {
+	margin: 0 50px;
+}
+
+.menu li a {
+	font-size: 25px;
+	color: wheat;
+	transition: all 1s;
+}
+
+.menu li a:hover {
+	transition: .5s;
+  color: red;
+}
+
+#icon {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 3px solid red;
+	background-image: url(../img/pause.png);
+	background-size: 100%;
+	cursor: pointer;
+	margin-right: 40px;
+}
+
+.middle {
+	margin: auto;
+	margin-top: 40px;
+	width: 90%;
+	height: 1000px;
+	border-radius: 10px;
+  background-color: rgba(5, 5, 20, 0.4); 
+  display: flex;
+  justify-content: space-around;
+  border: 5px solid transparent;
+  border-image: linear-gradient(to left top,black 20%,  transparent 30%, transparent 70%, black 90%);
+  border-image-slice: 2; 
+}
+
+.left {
+	margin-top: 5%;
+	width: 50%;
+	height: 85%;
+  background-color: rgba(5, 5, 20, 0.6); 
+	margin-left: 3%;
+	border-radius: 10px; 
+}
+
+.right {
+	margin-top: 5%;
+	width: 30%;
+	height: 95%;
+  background-color: rgba(5, 5, 20, .6); 
+	border-radius: 5px;
+	margin-right: 30px;
+	display: none;
+}
+
+audio {
+	font-family: monospace;
+	margin-top: 20px;
+	margin-left: 30px;
+	border-radius: 20px;
+	width: 70%;
+	height: 40px;
+}
+
+.coll {
+	color: #12005e;
+	margin-top: 10px;
+	margin-left: 30px;
+	margin-bottom: 30px;
+}
+
+.sungName {
+	margin-top: 15px;
+	margin-left: 30px;
+	color: #c2185b;
+	font-size: 20px;
+}
+
+.musicAll {
+	width: 172px;
+	height: 42px;
+	border-radius: 20px;
+	border: 2px solid #f00B;
+}
+
+.musicTops{
+	margin-top: -1px;
+	width: 150px;
+	height: 40px;
+	border-radius: 19px;
+	color: #000	;
+	font-size: 20px;
+	cursor: pointer;
+}
+.musicTops:hover{
+	border: 2px solid #f00;
+	margin-left: 18px;
+	color: #f00;
+}
